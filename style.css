@@ -6,6 +6,19 @@ body {
     background-color: #f9f9f9;
     color: #333;
   }
+/* Center Logo Styling */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f9f9f9; /* Optional background color */
+  }
+  
+  .logo {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
+  }
   
   h1, h2, h3 {
     text-align: center;
