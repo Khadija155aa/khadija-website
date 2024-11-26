@@ -1,1 +1,111 @@
-
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    color: #2b2b2b;
+  }
+  
+  /* Main Dishes Section */
+  .main-dishes {
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .recipe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recipe-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2b7a78;
+  }
+  
+  .recipe-info {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients, .method {
+    margin-bottom: 15px;
+  }
+  
+  .ingredients ul, .method ol {
+    padding-left: 20px;
+  }
+  
+  .ingredients ul li, .method ol li {
+    margin-bottom: 5px;
+  }
+  
+  /* Highlight Prep and Cook Time */
+  .recipe-info span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px 6px;
+    background-color: #e8f4f8;
+    color: #2b7a78;
+    border-radius: 4px;
+    font-size: 0.85em;
+  }
+  
+  /* Responsive Design */
+  @media screen and (min-width: 768px) {
+    .main-dishes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .recipe-card {
+      flex: 1 1 calc(33% - 20px);
+      box-sizing: border-box;
+    }
+  }
+  
+  /* Extra Touch for Avocado Salad */
+  .recipe-card.avocado-salad {
+    border: 2px solid #8dc63f;
+  }
+  
+  .recipe-card.avocado-salad .recipe-title {
+    color: #8dc63f;
+  }
+  
+  /* Extra Touch for Coolant Cookies */
+  .recipe-card.coolant-cookies {
+    border: 2px solid #ffb3b3;
+  }
+  
+  .recipe-card.coolant-cookies .recipe-title {
+    color: #ff7f7f;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2b7a78;
+    color: #fff;
+    font-size: 0.85em;
+  }
+  
