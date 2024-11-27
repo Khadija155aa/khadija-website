@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #ffb347;
+  background-color: #f7e8d2;
   padding: 20px;
   text-align: center;
 }
@@ -47,7 +47,8 @@ main {
 
 h1 {
   text-align: center;
-  color: #ff6347;
+  color: #871719
+  ;
 }
 
 .about-me {
@@ -85,12 +86,12 @@ h1 {
 }
 
 h2, h3 {
-  color: #ff6347;
+  color: #871719;
 }
 
 /* Footer */
 footer {
-  background-color: #ffb347;
+  background-color: #f7e8d2;
   text-align: center;
   padding: 10px;
   color: white;
