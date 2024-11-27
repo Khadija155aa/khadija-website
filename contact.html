@@ -3,39 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta name="author" content="Khadija">
     <link rel="stylesheet" href="style.css">
+
+    <title>Khadija's Recipe Collection</title>
 </head>
-<div class="logo-container">
-    <img src="mynewlogo.png" alt="Logo" class="logo">
-  </div>
 <body>
     <header>
         <h1>Khadija's Recipe Collection</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="main-dishes.html">Main Dishes</a></li>
+                <li><a href="main-dishes.htm">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Contact Us</h2>
-        <p>If you have any questions or feedback, please reach out using the form below.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, recipe requests, or just want to say hello, feel free to reach out!</p>
+
+            <form action="#" method="post" class="form-container">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-label="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-label="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Contact:</label>
+                    <select id="reason" name="reason" required aria-label="Reason for Contact">
+                        <option value="" disabled selected>Select a reason</option> <!-- Placeholder option -->
+                        <option value="saying_hi">Saying Hi</option>
+                        <option value="recipe_request">Recipe Request</option>
+                        <option value="feedback_on_blog">Feedback on Blog</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="40" aria-label="Your Comments"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Khadija's Recipe Collection. All rights reserved.</p>
+        <p>&copy; <time datetime="2024">2024</time> Khadija</p>
     </footer>
 </body>
 </html>
-
