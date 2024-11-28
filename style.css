@@ -68,7 +68,7 @@ p {
 }
 
 header {
-  background-color: #333;
+  background-color: #FCDBBC;
   color: #fff;
   padding: 10px 0;
   position: sticky;
@@ -180,7 +180,7 @@ input[type="submit"]:hover {
 }
 
 header, footer {
-  background-color: #333;
+  background-color: #FCDBBC;
   color: #fff;
   padding: 1em;
   text-align: center;
