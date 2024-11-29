@@ -264,6 +264,29 @@ ul li, ol li {
   margin: 0 auto;
 }
 
+/* Three-Column Layout */
+.three-column-layout {
+  display: flex;
+  gap: 15px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.three-column-layout .side {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.three-column-layout .main {
+  flex: 2;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 /* Form Styles */
 form {
   display: flex;
