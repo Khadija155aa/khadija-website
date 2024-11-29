@@ -64,6 +64,11 @@ h1, h2 {
   font-family: 'Cursive', 'Comic Sans MS', sans-serif;
   color: #871719; /* Matching the logo color */
 }
+p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
 /* Card Styling */
 .card {
