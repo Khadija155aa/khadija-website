@@ -70,12 +70,6 @@ h1, h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -105,14 +99,8 @@ footer {
   .card {
       width: 90%; /* Adjust card size on smaller screens */
   }
-}
-/* Adjusting Image Sizes */
-.card img {
-  width: 800px; /* Set the width to 800px */
-  height: auto; /* Maintain aspect ratio */
-  display: block;
-  margin: 0 auto; /* Center the image within the card */
-}
+
+
 /* Flexbox layout for Hobbies & Interests section */
 .hobbies-interests {
   display: flex;
@@ -176,4 +164,13 @@ nav {
 .sidebar {
   flex: 1;
   background-color: #eee;
+}
+
+/* Add this to style.css to control image sizes */
+.recipe-card img {
+  width: 100%; /* Makes the image responsive and take up the full width of its container */
+  max-width: 400px; /* You can adjust this value based on how large you want the images */
+  height: auto; /* Keeps the aspect ratio intact */
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
 }
