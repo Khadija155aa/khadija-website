@@ -6,11 +6,6 @@ body {
   margin: 0;
   padding: 0;
 }
-p {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
 
 /* Header Styling */
 header {
