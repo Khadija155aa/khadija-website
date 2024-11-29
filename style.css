@@ -1,20 +1,10 @@
-/* Basic Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* General Styling */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f9f5f0; /* Light beige for a warm feel */
   color: #333; /* Dark gray for readability */
-}
-
-h1, h2, h3 {
-  font-family: 'Cursive', 'Comic Sans MS', sans-serif;
-  color: #871719; /* Matching the logo color */
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styling */
@@ -22,20 +12,15 @@ header {
   color: white;
   padding: 20px;
   text-align: center;
+  font-family: 'Cursive', 'Comic Sans MS', sans-serif;
   font-size: 2rem;
-  background-color: #333;
 }
 
 /* Navigation Menu */
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #333;
-  z-index: 1000;
-}
-
 nav ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   background-color: #871719; /* Matching the logo color */
@@ -55,15 +40,29 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #670f13; /* Slightly darker shade */
+  background-color: #670f13; /* Slightly darker shade of the logo color */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000;
 }
 
 /* Section Styling */
 section {
   padding: 30px;
   text-align: center;
+  background-image: url('wood-texture.jpg'); /* Replace with your wood texture */
   background-size: cover;
   color: #333;
+}
+
+h1, h2 {
+  font-family: 'Cursive', 'Comic Sans MS', sans-serif;
+  color: #871719; /* Matching the logo color */
 }
 
 /* Card Styling */
@@ -84,28 +83,31 @@ section {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Recipe Card Image Styling */
+.card h3 {
+  font-family: 'Cursive', 'Comic Sans MS', sans-serif;
+  color: #871719; /* Matching the logo color */
+  margin: 15px 0;
+}
+
 .recipe-card img {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
 }
 
 /* Sidebar Styling */
 .sidebar {
-  flex: 1;
   background-color: #fafafa;
   padding: 15px;
 }
 
-/* Layout Container */
-.container {
-  display: flex;
-  gap: 20px;
-}
-
-.main-content {
-  flex: 2;
+/* Attribute Selector */
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 /* Hobbies & Interests Section */
@@ -123,61 +125,33 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hobby-box ul, .interest-box ul {
-  list-style: none;
-  padding: 0;
-}
-
 .hobby-box ul li, .interest-box ul li {
   margin-bottom: 0.5em;
+  list-style-type: none;
 }
 
-/* Form Styling */
-form {
+/* Layout Container */
+.container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+  gap: 20px;
 }
 
-form label {
-  font-weight: bold;
+.main-content {
+  flex: 2;
 }
 
-form input[type="text"],
-form input[type="email"],
-form select,
-form textarea {
-  padding: 10px;
-  font-size: 1em;
-  margin-top: 5px;
-}
-
-form input[type="submit"] {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover {
-  background-color: #555;
+.sidebar {
+  flex: 1;
+  background-color: #eee;
 }
 
 /* Footer Styling */
 footer {
-  background-color: #871719;
+  background-color: #871719; /* Matching the logo color */
   color: white;
   text-align: center;
   padding: 10px 0;
   font-size: 0.9rem;
-}
-
-footer p {
-  margin: 0;
-  color: #ccc;
 }
 
 /* Responsive Design */
@@ -194,3 +168,184 @@ footer p {
     flex-direction: column;
   }
 }
+
+.three-column {
+  display: flex;
+  gap: 20px;
+}
+
+.main-column {
+  flex: 2;
+}
+
+.side-column {
+  flex: 1;
+}
+
+.img-with-caption {
+  float: right;
+  margin: 10px;
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Flexbox Form Layout */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  width: 80%;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+article h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+article time {
+  font-size: 0.9em;
+  color: #777;
+}
+
+article h3 {
+  color: #444;
+  margin-top: 15px;
+}
+
+/* Ingredients and Method Lists */
+ul, ol {
+  margin: 10px 0 20px 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 5px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="submit"] {
+  padding: 10px;
+  font-size: 1em;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer p {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
