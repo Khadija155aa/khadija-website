@@ -258,7 +258,7 @@ ul li, ol li {
 }
 .recipe-card img {
   width: 100%;
-  max-width: 400px; /* Adjust this value to your desired size */
+  max-width: 800px; /* Adjust this value to your desired size */
   height: auto;
   display: block;
   margin: 0 auto;
