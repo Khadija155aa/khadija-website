@@ -114,3 +114,41 @@ footer {
   display: block;
   margin: 0 auto; /* Center the image within the card */
 }
+/* Flexbox layout for Hobbies & Interests section */
+.hobbies-interests {
+  display: flex;
+  gap: 1em; /* Adds space between the boxes */
+  margin-top: 1em;
+}
+
+/* Flexbox layout for Hobbies & Interests section */
+.hobbies-interests {
+  display: flex;
+  gap: 1em; /* Adds space between the boxes */
+  margin-top: 1em;
+}
+
+.hobby-box, .interest-box {
+  flex: 1;
+  background-color: #f9f5f0;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+/* Styling for lists inside each box */
+.hobby-box ul, .interest-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hobby-box ul li, .interest-box ul li {
+  margin-bottom: 0.5em;
+}
+
+
+/* Class and ID selectors */
+.sidebar {
+  background-color: #fafafa;
+  padding: 15px;
+}
