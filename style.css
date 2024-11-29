@@ -107,3 +107,10 @@ footer {
       width: 90%; /* Adjust card size on smaller screens */
   }
 }
+/* Adjusting Image Sizes */
+.card img {
+  width: 800px; /* Set the width to 800px */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image within the card */
+}
