@@ -121,16 +121,13 @@ footer {
   padding: 1em;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-/* Styling for lists inside each box */
-.hobby-box ul, .interest-box ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .hobby-box ul li, .interest-box ul li {
   margin-bottom: 0.5em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -166,11 +163,11 @@ nav {
   background-color: #eee;
 }
 
-/* Add this to style.css to control image sizes */
+/* Adjust the image size in recipe cards */
 .recipe-card img {
-  width: 100%; /* Makes the image responsive and take up the full width of its container */
-  max-width: 400px; /* You can adjust this value based on how large you want the images */
-  height: auto; /* Keeps the aspect ratio intact */
-  display: block; /* Ensures the image behaves like a block element */
-  margin: 0 auto; /* Centers the image horizontally */
+  width: 100%; /* Set the image to take up the full width of its container */
+  max-width: 800px; /* Limit the width to 800px */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
