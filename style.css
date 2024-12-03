@@ -7,6 +7,12 @@ body {
   padding: 0;
 }
 
+body {
+  background-image: url('background-cook.jpg'); /* Adjust the path to match your image location */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
 /* Header Styling */
 header {
   color: white;
