@@ -110,7 +110,7 @@ p {
 /* General Image Styling */
 img {
   max-width: 100%;
-  height: 400px; /* Maintains aspect ratio */
+  height: auto; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: adds rounded corners */
 }
 
