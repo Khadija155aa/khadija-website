@@ -1,3 +1,9 @@
+html {
+  background: url('background-cook.jpg') no-repeat center center fixed;
+  background-size: cover; /* This ensures the image covers the entire page */
+}
+
+
 /* General Styling */
 body {
   font-family: 'Arial', sans-serif;
@@ -5,14 +11,17 @@ body {
   color: #333; /* Dark gray for readability */
   margin: 0;
   padding: 0;
+  margin: 40px;
+  padding: 40px;
+  border-top: 10px solid #871719;
+  line-height: 1.6;
+  color: #871719;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-body {
-  background-image: url('background-cook.jpg'); /* Adjust the path to match your image location */
-  background-size: cover; /* Ensures the image covers the entire background */
-  background-position: center; /* Centers the image */
-  background-repeat: repeat; 
-}
 /* Header Styling */
 header {
   color: white;
