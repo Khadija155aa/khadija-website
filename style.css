@@ -89,12 +89,12 @@ p {
 .about-me {
   display: flex;
   padding: 0;
-
 }
+
 .about-image {
   margin-right: 20px;
-  
 }
+
 /* Card Styling */
 .card {
   display: inline-block;
@@ -128,7 +128,6 @@ p {
 
 /* General Image Styling */
 img {
-  max-width: 100%;
   height: auto; /* Maintains aspect ratio */
   border-radius: 8px; /* Optional: adds rounded corners */
 }
